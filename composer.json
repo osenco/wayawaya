@@ -1,3 +1,25 @@
 {
-	"name": "osenco/wayawaya"
+	"name": "osenco/wayawaya",
+    "description": "Intuitive Mpesa SDK for PHP Apps. Just Plug 'N Play",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Osen Concepts",
+            "email": "hi@osen.co.ke"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+	"autoload": {
+		"psr-4": {
+			"Osen\\Waya\\": "src/" 
+		}
+	},
+	"archive": {
+		"exclude": ["/docs"]
+	}
 }
