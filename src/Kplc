@@ -1,0 +1,7 @@
+<?php
+
+namespace Osen\Waya\Kplc
+
+class Kplc extends Waya
+{
+}
