@@ -3,7 +3,7 @@ namespace Osen\Waya;
 
 class Waya
 {
-$public $errors = [
+public $errors = [
 "Request Type not Set-- Your request is invalid.",
 "Succesfull request",
 "Transaction ID not set",
@@ -58,7 +58,7 @@ $curl_response = curl_exec($curl);
 echo json_decode($curl_response);
 }
 
-function lookup()
+public function lookup()
 {
 $url = 'https://sandbox.wayawaya.com/pp_services';
 
@@ -114,7 +114,7 @@ $respons = '[
 ]';
 }
 
-function forex()
+public function forex()
 {
 $url = 'https://sandbox.wayawaya.com/checks/service_lookup/v1/fxlookup';
 
@@ -152,7 +152,7 @@ $response = '{
 }';
 }
 
-function fee()
+public function fee()
 {
 $url = 'https://sandbox.wayawaya.com/checks/service_lookup/v1/feelookup';
 
@@ -228,7 +228,7 @@ card_token	XXXXXX	Stored customer card token issued by WayaWaya
 cust_phone_no	2547xxxxxxxx	Paying customer Phone number
 QueueTimeOutURL	http://your_timeout_url	Time-out URL
 ResultURL	http://your_result_url	Response URL*/
-function send_mobile()
+public function send_mobile()
 {
 $url = 'https://sandbox.wayawaya.com/pp_services';
 
@@ -336,7 +336,7 @@ cust_phone_no	2547xxxxxxxx	Paying customer Phone number
 QueueTimeOutURL	http://your_timeout_url	Time-out URL
 ResultURL	http://your_result_url	Response URL
 */
-function send_account()
+public function send_account()
 {
 $url = 'https://sandbox.wayawaya.com/pp_services';
 
@@ -512,7 +512,7 @@ The above command returns JSON structured like this:
 }
 }
 
-function kplc_prepaid_bill_validate()
+public function kplc_prepaid_bill_validate()
 {
 $url = 'https://sandbox.wayawaya.com/pp_services';
 
@@ -562,7 +562,7 @@ The above command returns JSON structured like this:
 }
 }
 
-fuction kplc_postpay_bill_check()
+public fuction kplc_postpay_bill_check()
 {
 $url = 'https://sandbox.wayawaya.com/pp_services';
 
@@ -613,7 +613,7 @@ The above command returns JSON structured like this:
 
 }
 
-function airtime()
+public function airtime()
 {
 $url = 'https://sandbox.wayawaya.com/pp_services';
 
